@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pg-memory-agent"
+version = "0.1.0"
+description = "Read-only PostgreSQL work_mem monitoring and tuning assistant"
+requires-python = ">=3.11"
+dependencies = ["psycopg[binary]>=3.2,<4", "PyYAML>=6,<7", "psutil>=6,<8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+pg-memory-agent = "pg_memory_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

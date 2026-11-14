@@ -1,0 +1,9 @@
+mode: recommend
+scope: instance
+work_mem:
+  min_mb: 4
+  max_mb: 128
+  max_increase_factor: 2.0
+safety:
+  require_approval: true
+  allow_execution: false

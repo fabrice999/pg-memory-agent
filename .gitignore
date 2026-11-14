@@ -1,0 +1,42 @@
+# Python virtual environments
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Packaging
+build/
+dist/
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pgpass
+
+# Local monitoring data (Step 4)
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+*.log
